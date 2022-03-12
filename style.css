@@ -17,6 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
 }
 
 .time {
@@ -26,7 +27,7 @@
 .logo
 {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 27%;
 }
@@ -40,6 +41,7 @@ nav
 ul 
 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 ul li 
@@ -50,6 +52,7 @@ a {
   text-decoration: none;
   color: black;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 
@@ -71,6 +74,8 @@ h2{
   margin: 0.7rem 0;
   font-size: 1.2rem;
   text-align: justify;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
 }
 
 @media screen and (max-width:768px) {
@@ -84,10 +89,11 @@ h2{
     text-align: center;
     border-bottom: 1px solid darkgrey;
     margin-bottom: 1.5rem;
+    width: 95%;
   }
   .col:last-child {
     border: none;
-    margin: 0;
+    /* margin: 0; */
   }
   .logo{
     width: 60%;
@@ -97,5 +103,10 @@ h2{
   {
     margin-top: 1rem;
     /* text-align: center; */
+  }
+  ul li {
+    text-align: center;
+  padding: 0.5rem;
+  width: 33%;
   }
 }
